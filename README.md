@@ -2,7 +2,7 @@
 # Molecular Dynamics Simulation - MD_SIM-AD-2-1
 
 ## Overview
-This iteration of the molecular dynamics (MD) simulation builds upon **MD_SIM-AD-1-1**, introducing significant improvements in **boundary conditions, numerical integration, and visualization techniques**. The primary focus is ensuring that particles remain **confined within the simulation box** while maintaining **accurate energy conservation**.
+This iteration of the molecular dynamics (MD) simulation builds upon **MD_SIM-AD-1-3**, introducing significant improvements in **boundary conditions, numerical integration, and visualization techniques**. The primary focus is ensuring that particles remain **confined within the simulation box** while maintaining **accurate energy conservation**.
 
 The simulation continues to use **Lennard-Jones interactions** to model inter-particle forces but now implements **Velocity-Verlet integration** for more accurate trajectory calculations. 
 
