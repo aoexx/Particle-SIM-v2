@@ -123,13 +123,13 @@ Each version introduces significant improvements in **visualization, physics acc
 
 ---
 
-## Comparison of Key Features**
-- **Feature** : ( AD-1-1, AD-1-2 , AD-1-3, AD-2-1 (current) |
-- **Visuals** : 2D (Matplotlib), 3D (Manim), 3D (Manim), 3D (Manim, Optimized) |
-- **Boundary Conditions** :  Periodic (PBCs), Periodic (PBCs), Periodic (PBCs), Reflective Boundaries |
-- **Integration Method** :  Basic Verlet, Basic Verlet, Velocity-Verlet, Velocity-Verlet |
-- **Force Calculations** : Basic Lennard-Jones, Optimized Lennard-Jones, Optimized Lennard-Jones, Newton’s Third Law Applied |
-- **Energy Conservation** : False, False, True, True |
+## Comparison of Key Features 
+- **Feature** : ( AD-1-1, AD-1-2 , AD-1-3, AD-2-1 (current) 
+- **Visuals** : 2D (Matplotlib), 3D (Manim), 3D (Manim), 3D (Manim, Optimized) 
+- **Boundary Conditions** :  Periodic (PBCs), Periodic (PBCs), Periodic (PBCs), Reflective Boundaries 
+- **Integration Method** :  Basic Verlet, Basic Verlet, Velocity-Verlet, Velocity-Verlet 
+- **Force Calculations** : Basic Lennard-Jones, Optimized Lennard-Jones, Optimized Lennard-Jones, Newton’s Third Law Applied 
+- **Energy Conservation** : False, False, True, True 
 
 ---
 
