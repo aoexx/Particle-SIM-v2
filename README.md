@@ -97,9 +97,9 @@ Each version introduces significant improvements in **visualization, physics acc
 - Particles can unrealistically teleport across PBC boundaries  
 
 ### **Version 3: MD_SIM-AD-1-3 (Velocity-Verlet Integration)**
-- Switched from basic Verlet updates to Velocity-Verlet integration**  
-- Significantly improved numerical stability & energy conservation**  
-- More efficient force recalculations per time step**  
+- Switched from basic Verlet updates to Velocity-Verlet integration 
+- Significantly improved numerical stability & energy conservation 
+- More efficient force recalculations per time step 
 
 🔗 **[View Code](https://github.com/aoexx/Particle-SIM-v1/blob/main/MD_SIM-AD-1-3.py)**
 
