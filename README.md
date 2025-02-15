@@ -68,7 +68,7 @@ python visualize.py
 ---
 
 ## Particle-SIM Evolution from v1 to v2
-### Version Breakdown & Key Enhancements**
+### Version Breakdown & Key Enhancements
 Each version introduces significant improvements in **visualization, physics accuracy, and boundary handling**.
 
 ### **Version 1: MD_SIM-AD-1-1 (Basic 2D Simulation)**
@@ -114,7 +114,7 @@ Each version introduces significant improvements in **visualization, physics acc
 - Improved force calculations using Newton’s Third Law to reduce redundant computations
 - Finalized a stable, realistic molecular dynamics simulation
 
-🔗 **[View Final Code](https://github.com/aoexx/Particle-SIM-v2/blob/main/MD_SIM-AD-2-1.py)**
+🔗 **[View Current Code](https://github.com/aoexx/Particle-SIM-v2/blob/main/MD_SIM-AD-2-1.py)**
 
 **Optimizations Include:**  
 - Reflective boundaries prevent particles from escaping  
@@ -124,12 +124,12 @@ Each version introduces significant improvements in **visualization, physics acc
 ---
 
 ## Comparison of Key Features**
-| **Feature** : ( AD-1-1, AD-1-2 , AD-1-3, AD-2-1 (current) |
-| **Visuals** : 2D (Matplotlib), 3D (Manim), 3D (Manim), 3D (Manim, Optimized) |
-| **Boundary Conditions** :  Periodic (PBCs), Periodic (PBCs), Periodic (PBCs), Reflective Boundaries |
-| **Integration Method** :  Basic Verlet, Basic Verlet, Velocity-Verlet, Velocity-Verlet |
-| **Force Calculations** : Basic Lennard-Jones, Optimized Lennard-Jones, Optimized Lennard-Jones, Newton’s Third Law Applied |
-| **Energy Conservation** : False, False, True, True |
+- **Feature** : ( AD-1-1, AD-1-2 , AD-1-3, AD-2-1 (current) |
+- **Visuals** : 2D (Matplotlib), 3D (Manim), 3D (Manim), 3D (Manim, Optimized) |
+- **Boundary Conditions** :  Periodic (PBCs), Periodic (PBCs), Periodic (PBCs), Reflective Boundaries |
+- **Integration Method** :  Basic Verlet, Basic Verlet, Velocity-Verlet, Velocity-Verlet |
+- **Force Calculations** : Basic Lennard-Jones, Optimized Lennard-Jones, Optimized Lennard-Jones, Newton’s Third Law Applied |
+- **Energy Conservation** : False, False, True, True |
 
 ---
 
