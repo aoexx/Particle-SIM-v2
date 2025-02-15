@@ -19,7 +19,7 @@ Reflective boundary conditions have been introduced to ensure **particles bounce
 
 ---
 
-## Comparing with Previous Versions
+## (Summary/TLDR) Comparing with Previous Versions
 ### MD_SIM-AD-1-1/2/3
 - **Explicit Euler Integration** → Lower accuracy, less energy conservation.
 - **No Boundary Conditions** → Particles escape the simulation box.
@@ -64,6 +64,72 @@ python MD_SIM-AD-2-1.py
 python visualize.py
 ```
 - Uses **Manim** to animate particle motion.
+
+---
+
+## Particle-SIM Evolution from v1 to v2
+### Version Breakdown & Key Enhancements**
+Each version introduces significant improvements in **visualization, physics accuracy, and boundary handling**.
+
+### **Version 1: MD_SIM-AD-1-1 (Basic 2D Simulation)**
+- Initial implementation using 2D Matplotlib & Seaborn  
+- Applies periodic boundary conditions (PBCs)
+- Lennard-Jones potential implemented for force calculations  
+- Does not conserve energy (no velocity corrections)
+
+🔗 **[View Code](https://github.com/aoexx/Particle-SIM-v1/blob/main/MD_SIM-AD-1-1.py)**
+
+**Limitations:**  
+- No 3D visualization  
+- No trajectory tracking  
+- Energy drift over time due to simple integration  
+
+### **Version 2: MD_SIM-AD-1-2 (3D Visualization with Manim)**
+- Upgraded from 2D Matplotlib to 3D Manim animations
+- Still uses periodic boundary conditions (PBCs)  
+- Optimized force calculation to reduce redundant operations
+- Manim frame rate adjusted to 24 FPS for smooth animation  
+
+🔗 **[View Code](https://github.com/aoexx/Particle-SIM-v1/blob/main/MD_SIM-AD-1-2.py)**
+
+**Limitations:**  
+- Still using basic Verlet updates (energy conservation not enforced)  
+- Particles can unrealistically teleport across PBC boundaries  
+
+### **Version 3: MD_SIM-AD-1-3 (Velocity-Verlet Integration)**
+- Switched from basic Verlet updates to Velocity-Verlet integration**  
+- Significantly improved numerical stability & energy conservation**  
+- More efficient force recalculations per time step**  
+
+🔗 **[View Code](https://github.com/aoexx/Particle-SIM-v1/blob/main/MD_SIM-AD-1-3.py)**
+
+**Limitations:**  
+- Still uses periodic boundary conditions (PBCs) instead of reflective boundaries
+- Particles teleport when crossing box edges  
+
+
+### **Version 4: MD_SIM-AD-2-1 (Current Version)**
+- Introduced reflective boundary conditions (particles bounce instead of teleporting) 
+- Refactored code into a structured OOP (Object-Oriented Programming) design
+- Improved force calculations using Newton’s Third Law to reduce redundant computations
+- Finalized a stable, realistic molecular dynamics simulation
+
+🔗 **[View Final Code](https://github.com/aoexx/Particle-SIM-v2/blob/main/MD_SIM-AD-2-1.py)**
+
+**Optimizations Include:**  
+- Reflective boundaries prevent particles from escaping  
+- Stable Velocity-Verlet motion integration  
+- More realistic particle interactions  
+
+---
+
+## Comparison of Key Features**
+| **Feature** : ( AD-1-1, AD-1-2 , AD-1-3, AD-2-1 (current) |
+| **Visuals** : 2D (Matplotlib), 3D (Manim), 3D (Manim), 3D (Manim, Optimized) |
+| **Boundary Conditions** :  Periodic (PBCs), Periodic (PBCs), Periodic (PBCs), Reflective Boundaries |
+| **Integration Method** :  Basic Verlet, Basic Verlet, Velocity-Verlet, Velocity-Verlet |
+| **Force Calculations** : Basic Lennard-Jones, Optimized Lennard-Jones, Optimized Lennard-Jones, Newton’s Third Law Applied |
+| **Energy Conservation** : False, False, True, True |
 
 ---
 
