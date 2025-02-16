@@ -2,7 +2,7 @@ from manim import *
 import numpy as np
 
 # ==================================================================
-#  MOLECULAR DYNAMICS SIMULATION (WITH REFLECTIVE BOUNDARIES)
+#  MOLECULAR DYNAMICS SIMULATION (WITH REFLECTIVE BOUNDARIES) 
 # ==================================================================
 # This script implements a molecular dynamics (MD) simulation 
 # using the Lennard-Jones potential and Velocity-Verlet integration.
